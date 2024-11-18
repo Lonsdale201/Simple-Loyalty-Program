@@ -1,0 +1,21 @@
+.hw-pilla-notification {
+    background-color: #76c38f;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    text-align: center;
+}
+
+.hw-pilla-notification-text {
+    font-family: inherit;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}

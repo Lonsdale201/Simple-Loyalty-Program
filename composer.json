@@ -1,0 +1,29 @@
+{
+    "name": "hellowp/hw-woo-torzsvasarloi",
+    "description": "Törzsvárálásói beállítások a WooCommerce számára",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HelloWP\\HWLoyalty\\App\\Modules\\": "app/modules/",
+            "HelloWP\\HWLoyalty\\App\\Functions\\": "app/functions/",
+            "HelloWP\\HWLoyalty\\App\\Admin\\": "app/admin/",
+            "HelloWP\\HWLoyalty\\App\\Helper\\": "app/helper/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Soczó Kristóf",
+            "email": "lonsdale201@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": false,
+            "automattic/jetpack-autoloader": false
+        }
+    }
+}

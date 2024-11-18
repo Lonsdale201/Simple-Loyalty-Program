@@ -1,0 +1,655 @@
+# Copyright (C) 2024 Soczó Kristóf
+# This file is distributed under the same license as the Simple Loyalty Program plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Loyalty Program 1.0\n"
+"POT-Creation-Date: 2024-11-18T00:16:19+00:00\n"
+"PO-Revision-Date: 2024-11-18 02:03+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: hw-woo-loyalty\n"
+
+#. Plugin Name of the plugin
+msgid "Simple Loyalty Program"
+msgstr "Simple Loyalty Program"
+
+#. Description of the plugin
+msgid "Loyalty settings for WooCommerce"
+msgstr "Törzsvásárlói funkciók  a WooCommerce-hez"
+
+#. Author of the plugin
+msgid "Soczó Kristóf"
+msgstr "Soczó Kristóf"
+
+#. Author URI of the plugin
+msgid "https://hellowp.io/en/"
+msgstr "https://hellowp.io/en/"
+
+#: app/admin/AdminSettings.php:49 app/admin/AdminSettings.php:477
+#: app/helper/SettingsConfig.php:69 app/helper/UserMeta.php:71
+msgid "Loyalty Program"
+msgstr "Törzsvásárló"
+
+#: app/admin/AdminSettings.php:57 app/admin/AdminSettings.php:110
+msgid "Global Settings"
+msgstr "Globális beállítások"
+
+#: app/admin/AdminSettings.php:58
+msgid "Periodical Discount"
+msgstr "Időszakos kedvezmény"
+
+#: app/admin/AdminSettings.php:59
+msgid "Loyalty"
+msgstr "Törzsvásárló"
+
+#: app/admin/AdminSettings.php:60 app/admin/AdminSettings.php:389
+msgid "Messages"
+msgstr "Üzenetek"
+
+#: app/admin/AdminSettings.php:61 app/admin/AdminSettings.php:423
+msgid "Notifications"
+msgstr "Értesítések"
+
+#: app/admin/AdminSettings.php:112
+msgid ""
+"Settings that apply to both periodic discounts and loyalty program discounts."
+msgstr ""
+"Beállítások, amelyek mind az időszakos kedvezményekre, mind a törzsvásárlói "
+"kedvezményekre vonatkoznak."
+
+#: app/admin/AdminSettings.php:116
+msgid "Discount Name"
+msgstr "Kedvezmény megnevezése"
+
+#: app/admin/AdminSettings.php:119 app/helper/SettingsConfig.php:36
+msgid "Loyalty Discount"
+msgstr "Törzsvásárlói kedvezmény"
+
+#: app/admin/AdminSettings.php:122
+msgid "Discount Mode"
+msgstr "Kedvezmény módja"
+
+#: app/admin/AdminSettings.php:123
+msgid "Choose the discount method."
+msgstr "Válaszd ki a kedvezmény módját."
+
+#: app/admin/AdminSettings.php:128
+msgid "Cart Based"
+msgstr "Kosár alapú"
+
+#: app/admin/AdminSettings.php:134
+msgid "Discount Amount Type"
+msgstr "Kedvezmény Összegének Típusa"
+
+#: app/admin/AdminSettings.php:139
+msgid "Cart-Based (%)"
+msgstr "Kosár Alapú (%)"
+
+#: app/admin/AdminSettings.php:140
+msgid "Cart-Based (Fixed Amount)"
+msgstr "Kosár Alapú (Fix összegű)"
+
+#: app/admin/AdminSettings.php:144
+msgid "Percentage Discount Amount"
+msgstr "Százalékos kedvezmény mértéke"
+
+#: app/admin/AdminSettings.php:149
+msgid "Discount as a percentage of the cart total."
+msgstr "A kosár teljes összegéből számított százalékos kedvezmény."
+
+#: app/admin/AdminSettings.php:154
+msgid "Fixed Discount Amount"
+msgstr "Fix összegű kedvezmény mértéke"
+
+#: app/admin/AdminSettings.php:158
+msgid ""
+"Fixed amount to be deducted from the cart total (does not include delivery "
+"charges). Enter the amount excluding tax."
+msgstr ""
+"A kosár végösszegéből levonandó fix összeg (nem tartalmazza a szállítási "
+"díjat). Add meg az adó nélküli összeget."
+
+#: app/admin/AdminSettings.php:167
+msgid "Exclude Settings"
+msgstr "Kizárási beállítások"
+
+#: app/admin/AdminSettings.php:169
+msgid ""
+"Settings that define conditions under which the loyalty discount will not be "
+"applied."
+msgstr ""
+"Olyan beállítások, amelyek meghatározzák azokat a feltételeket, amelyek "
+"mellett a hűségkedvezmény nem kerül alkalmazásra."
+
+#: app/admin/AdminSettings.php:173
+msgid "Exclude sale product"
+msgstr "Akciós termékek kizárása"
+
+#: app/admin/AdminSettings.php:174
+msgid ""
+"if you enable this and there is a sale item in the cart, no discount will be "
+"given"
+msgstr ""
+"Ha engedélyezed ezt, és akciós termék van a kosárban, akkor nem jár a "
+"törzsvásárlói kedvezmény"
+
+#: app/admin/AdminSettings.php:179
+msgid "Disable Coupon Usage"
+msgstr "Kupon használatának tiltása"
+
+#: app/admin/AdminSettings.php:180
+msgid "If enabled, coupons will be disabled when loyalty discounts are active."
+msgstr ""
+"Ha engedélyezve van, a kuponok le lesznek tiltva, amikor a törzsvásárlói "
+"kedvezmények aktívak a felhasználónál."
+
+#: app/admin/AdminSettings.php:195
+msgid "Periodic discount"
+msgstr "Időszakos kedvezménx"
+
+#: app/admin/AdminSettings.php:197
+msgid ""
+"Periodic discount settings based on the users spending amount and spending "
+"cycle."
+msgstr ""
+"Időszakos kedvezmény beállításai a felhasználók költési összege és költési "
+"ciklusa alapján."
+
+#: app/admin/AdminSettings.php:201
+msgid "Enable Periodic discount"
+msgstr "Időszakos kedvezmény engedélyezése"
+
+#: app/admin/AdminSettings.php:202
+msgid ""
+"Enable periodic discounts. If enabled, the <b>loyalty program will not be "
+"available!</b>"
+msgstr ""
+"Engedélyezd az időszakos kedvezményeket. Ha engedélyezed, a <b>törzsvásárlói "
+"program nem lesz elérhető!</b>"
+
+#: app/admin/AdminSettings.php:209
+msgid "Target Amount"
+msgstr "Célösszeg"
+
+#: app/admin/AdminSettings.php:210
+msgid ""
+"Minimum spending required, combined with the spending cycle, to determine "
+"discount eligibility."
+msgstr ""
+"Az időszakos kedvezményhez szükséges minimális költés az adott időszak "
+"figyelembevételével."
+
+#: app/admin/AdminSettings.php:218
+msgid "Discount Cycle"
+msgstr "Időszak"
+
+#: app/admin/AdminSettings.php:219
+msgid ""
+"Specify the time period to be considered retrospectively for discount "
+"eligibility."
+msgstr ""
+"Add meg azt az időszakot, amelyet visszamenőlegesen figyelembe kell venni a "
+"kedvezmény jogosultságához."
+
+#: app/admin/AdminSettings.php:241
+msgid "Loyality program settings"
+msgstr "Törzsvásárlói beállítások"
+
+#: app/admin/AdminSettings.php:247
+msgid "Enable Loyality Program"
+msgstr "Törzsvásárló engedélyezése"
+
+#: app/admin/AdminSettings.php:248
+msgid ""
+"if you enable this, users who meet the criteria will be enrolled in the "
+"loyalty program. The status is saved in the user data"
+msgstr ""
+"Ha engedélyezed ezt, a feltételeknek megfelelő felhasználók bekerülnek a "
+"törzsvásárlói programba. Az állapotot a felhasználói adatok között tároljuk."
+
+#: app/admin/AdminSettings.php:259
+msgid "Conditions"
+msgstr "Kondíciók"
+
+#: app/admin/AdminSettings.php:261
+msgid ""
+"Set the conditions under which a user will qualify for the loyalty program. "
+"The discount amount is set in the global settings."
+msgstr ""
+"Állítsd be azokat a feltételeket, amelyek alapján a felhasználó jogosult "
+"lesz a törzsvásárlói programra. A kedvezmény mértéke a globális "
+"beállításoknál kell megadnod."
+
+#: app/admin/AdminSettings.php:265
+msgid "Minimum Spent Amount"
+msgstr "Min elköltött összeg"
+
+#: app/admin/AdminSettings.php:266
+msgid ""
+"The minimum amount a user must have spent to qualify for the permanent "
+"discount. These values are not calculated on the basis of the current count, "
+"but after the setting has been enabled. This data is also stored in the user "
+"data."
+msgstr ""
+"A minimális összeg, amit a felhasználónak el kell költenie ahhoz, hogy "
+"jogosult legyen az állandó kedvezményre. Ezek az értékek nem az aktuális "
+"adatok alapján kerülnek kiszámításra, hanem a beállítás engedélyezése után. "
+"Ez az adat a felhasználói adatok között kerül tárolásra."
+
+#: app/admin/AdminSettings.php:274
+msgid "Minimum Order Items"
+msgstr "Min megvásárolt tétel"
+
+#: app/admin/AdminSettings.php:275
+msgid ""
+"The minimum number of items a user must have ordered to qualify. These "
+"values are not calculated on the basis of the current count, but after the "
+"setting has been enabled. This data is also stored in the user data."
+msgstr ""
+"A minimális darabszám, amit a felhasználónak rendelnie kell ahhoz, hogy "
+"jogosult legyen. Ezek az értékek nem az aktuális darabszám alapján kerülnek "
+"kiszámításra, hanem a beállítás engedélyezése után. Ez az adat a "
+"felhasználói adatok között kerül tárolásra."
+
+#: app/admin/AdminSettings.php:283
+msgid "User Role Selector"
+msgstr "Szerepkörök"
+
+#: app/admin/AdminSettings.php:284
+msgid ""
+"Select the user roles that qualify for the loyalty program. Leave empty for "
+"no specific role requirement."
+msgstr ""
+"Válaszd ki azokat a felhasználói szerepköröket, amelyek jogosultak a "
+"törzsvásárlói programra. Hagyd üresen, ha nincs konkrét szerepkörkövetelmény."
+
+#: app/admin/AdminSettings.php:289
+msgid "No roles available"
+msgstr "Nincs szerepkör kiválasztva"
+
+#: app/admin/AdminSettings.php:291
+msgid "Select roles..."
+msgstr "Szerepkör választása..."
+
+#: app/admin/AdminSettings.php:295
+msgid "Condition Relation"
+msgstr "Kapcsolat"
+
+#: app/admin/AdminSettings.php:296
+msgid ""
+"Select whether both conditions (amount and items) must be met, or just one."
+msgstr ""
+"Válaszd ki, hogy mindhárom feltételnek (összeg, termékek száma és szerepkör) "
+"teljesülnie kell-e, vagy elegendő, ha csak az egyik feltétel teljesül."
+
+#: app/admin/AdminSettings.php:313
+msgid "Gift Products"
+msgstr "Ajándék termékek"
+
+#: app/admin/AdminSettings.php:315
+msgid ""
+"Honor your loyal customers by automatically adding free products to their "
+"purchase. The added product(s) will appear as a 0 FT item."
+msgstr ""
+"Tiszteld meg hűséges vásárlóidat azzal, hogy automatikusan ingyenes "
+"termékeket adsz a vásárlásukhoz. Az hozzáadott termék(ek) ingyenes tételként "
+"jelennek meg."
+
+#: app/admin/AdminSettings.php:319
+msgid "Free Gift Label"
+msgstr "Ingyenes termék címke"
+
+#: app/admin/AdminSettings.php:320
+msgid ""
+"Text to display under free gift products in the cart and checkout pages."
+msgstr ""
+"Szöveg, amely az ajándék termékek alatt jelenik meg a kosár és a pénztár "
+"oldalakon."
+
+#: app/admin/AdminSettings.php:325
+msgid "e.g., Gift product"
+msgstr "pl:. Ajándék termék"
+
+#: app/admin/AdminSettings.php:328
+msgid "Choose Gift Products"
+msgstr "Válasszuk ki az ingyenes termék8eket)"
+
+#: app/admin/AdminSettings.php:329
+msgid "Select products to add as gifts for loyal customers."
+msgstr ""
+"Válaszd ki azokat a termékeket, amelyeket ajándékként szeretnél hozzáadni a "
+"hűséges vásárlók számára."
+
+#: app/admin/AdminSettings.php:336
+msgid "Choose products"
+msgstr "Termékek kiválasztása"
+
+#: app/admin/AdminSettings.php:349
+msgid "Inactivity"
+msgstr "Inaktivitás"
+
+#: app/admin/AdminSettings.php:351
+msgid ""
+"Optionally set inactivity rules to remove users from the loyalty program."
+msgstr ""
+"Opcionálisan megadható inaktivitási szabályok, amelyek alapján a "
+"felhasználók automatikusan kikerülnek a törzsvásárlói programból."
+
+#: app/admin/AdminSettings.php:355
+msgid "Enable Inactivity"
+msgstr "Inaktivitás engedélyezése"
+
+#: app/admin/AdminSettings.php:356
+msgid ""
+"Enable this if you want users to be removed from the loyalty program after a "
+"period of inactivity."
+msgstr ""
+"Engedélyezd ezt, ha azt szeretnéd, hogy a felhasználók egy inaktivitási "
+"időszak után kikerüljenek a törzsvásárlói programból."
+
+#: app/admin/AdminSettings.php:362
+msgid "Inactivity Time"
+msgstr "Inaktivitási időszak"
+
+#: app/admin/AdminSettings.php:363
+msgid ""
+"Specify the inactivity period after which users will be removed from the "
+"loyalty program."
+msgstr ""
+"Add meg az inaktivitási időszakot, amely után a felhasználók kikerülnek a "
+"törzsvásárlói programból.\""
+
+#: app/admin/AdminSettings.php:367
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%s hónap"
+msgstr[1] "%s hónap"
+
+#: app/admin/AdminSettings.php:373
+msgid "Reset User Data"
+msgstr "Felhasználó adatok törlése"
+
+#: app/admin/AdminSettings.php:374
+msgid ""
+"If enabled, user data for total spending and purchased items will also be "
+"reset when removed from the program."
+msgstr ""
+"Ha engedélyezed, a felhasználó teljes költése és vásárolt tételei is "
+"visszaállításra kerülnek, amikor kikerül a programból."
+
+#: app/admin/AdminSettings.php:391
+msgid "Custom messages for specific scenarios in the loyalty program."
+msgstr "Egyedi üzenetek a törzsvásárlói program különböző eseteihez."
+
+#: app/admin/AdminSettings.php:395
+msgid "If Coupon Usage Disabled"
+msgstr "Ha a kupon használat tiltva van"
+
+#: app/admin/AdminSettings.php:396
+msgid "Message shown when coupon usage is disabled for a loyalty customer."
+msgstr ""
+"Az üzenet, amely akkor jelenik meg, ha a kuponhasználat le van tiltva a "
+"törzsvásárló számára."
+
+#: app/admin/AdminSettings.php:401 app/admin/AdminSettings.php:410
+#: app/admin/AdminSettings.php:442
+msgid "Enter message here..."
+msgstr "Üzenet megadása..."
+
+#: app/admin/AdminSettings.php:404
+msgid "If Free Gift Removed from Cart"
+msgstr "Ha az ingyenes termék eltávolításra került a kosárból"
+
+#: app/admin/AdminSettings.php:405
+msgid ""
+"Message shown when a free gift product is removed from the cart. Use the "
+"%product to show the removed product name(s). Supports HTML"
+msgstr ""
+"Az üzenet, amely akkor jelenik meg, ha egy ajándék termék eltávolításra "
+"kerül a kosárból. Használhatod a %product helyettesítő kódot az eltávolított "
+"termék(ek) nevének megjelenítéséhez. Támogatja a HTML-t is."
+
+#: app/admin/AdminSettings.php:429
+msgid "Enable Notifications"
+msgstr "Értesítések engedélyezése"
+
+#: app/admin/AdminSettings.php:430
+msgid ""
+"Enable this to display notification messages on the cart and checkout pages."
+msgstr ""
+"Engedélyezd ezt, hogy értesítési üzenetek jelenjenek meg a kosár és a "
+"pénztár oldalon."
+
+#: app/admin/AdminSettings.php:436
+msgid "Loyalty Program Message"
+msgstr "Törzsvásárlói Program Üzenet"
+
+#: app/admin/AdminSettings.php:437
+msgid ""
+"Show a message if the user is a loyalty customer or if the user has a "
+"periodic discount in the cart and checkout pages. Support HTML and shortcodes"
+msgstr ""
+"Mutass egy üzenetet, ha a felhasználó törzsvásárlói program tag, vagy ha "
+"időszakos kedvezmény van a kosarában vagy a pénztár oldalon. Támogatja a "
+"HTML-t és a shortcodeokat."
+
+#: app/admin/AdminSettings.php:445
+msgid "Logged Out User Message"
+msgstr "Kijelentkezett felhasználó üzenete"
+
+#: app/admin/AdminSettings.php:446
+msgid ""
+"Message displayed on the cart page to encourage non-logged-in users. "
+"Supports HTML and shortcodes."
+msgstr ""
+"Az üzenet, amely a kosár oldalon jelenik meg, hogy ösztönözze a nem "
+"bejelentkezett felhasználókat. Támogatja a HTML-t és a shortcode-okat."
+
+#: app/admin/AdminSettings.php:451
+msgid "Enter incentive message here..."
+msgstr "Írd be ide az ösztönző üzenetet..."
+
+#: app/admin/AdminSettings.php:458
+msgid "Myaccount Page"
+msgstr "Fiókom oldal"
+
+#: app/admin/AdminSettings.php:460
+msgid ""
+"Create a custom menu item on the My Account page where you can display "
+"details about the loyalty program, terms, and conditions. After created the "
+"menu, please <b>refresh the permalink settings</b>"
+msgstr ""
+"Hozz létre egy egyedi menüpontot a Saját fiók oldalon, ahol megjelenítheted "
+"a törzsvásárlói program részleteit, feltételeit és szabályait. A menü "
+"létrehozása után kérlek, <b>frissítsd az állandó hivatkozás beállításokat</"
+"b>."
+
+#: app/admin/AdminSettings.php:464
+msgid "Enable Myaccount Menu"
+msgstr "Fiókom oldal menü engedélyezése"
+
+#: app/admin/AdminSettings.php:465
+msgid ""
+"Enable this to add a new menu item to the My Account page for loyalty "
+"program information."
+msgstr ""
+"Engedélyezd ezt, hogy új menüpontot adj hozzá a Saját fiók oldalhoz a "
+"törzsvásárlói program információinak megjelenítéséhez."
+
+#: app/admin/AdminSettings.php:471
+msgid "Menu Label"
+msgstr "Menü cím"
+
+#: app/admin/AdminSettings.php:472
+msgid "Enter the name for the loyalty menu item in the My Account page."
+msgstr "Add meg a törzsvásárlói menüpont nevét a Saját fiók oldalon."
+
+#: app/admin/AdminSettings.php:480
+msgid "Menu Content"
+msgstr "menü tartalom"
+
+#: app/admin/AdminSettings.php:481
+msgid ""
+"Content displayed under the loyalty menu item. Supports HTML, shortcodes. "
+"Use the smart codes, <code>{{ discount-amount }}</code>, or "
+"<code>{{ customer.loyality.status | status-true: 'Active' | status-false: "
+"'Not active' }}</code>"
+msgstr ""
+"Tartalom, amely a törzsvásárlói menüpont alatt jelenik meg. Támogatja a HTML-"
+"t és a shortcode-okat. Használhatod az okoskódokat, például: "
+"<code>{{ discount-amount }}</code>, vagy <code>{{ customer.loyality.status | "
+"status-true: 'Aktív' | status-false: 'Nem aktív' }}</code>."
+
+#: app/admin/AdminSettings.php:486
+msgid "Enter loyalty program details here..."
+msgstr "Add meg itt a törzsvásárlói program részleteit..."
+
+#: app/admin/AdminSettings.php:498
+msgid "FluentCRM Integration"
+msgstr "FluentCRM Integráció"
+
+#: app/admin/AdminSettings.php:500
+msgid ""
+"Configure FluentCRM settings to automatically add loyalty program members to "
+"specific lists."
+msgstr ""
+"Állítsd be a FluentCRM beállításait, hogy a törzsvásárlói program tagjai "
+"automatikusan hozzáadásra kerüljenek bizonyos listához."
+
+#: app/admin/AdminSettings.php:504
+msgid "List Removal"
+msgstr "Lista eltávolító"
+
+#: app/admin/AdminSettings.php:505
+msgid ""
+"Enable this option to automatically remove users from the selected FluentCRM "
+"list if they no longer qualify for the loyalty program."
+msgstr ""
+"Engedélyezd ezt az opciót, hogy a felhasználók automatikusan eltávolításra "
+"kerüljenek a kiválasztott FluentCRM listáról, ha már nem jogosultak a "
+"törzsvásárlói programra."
+
+#: app/admin/AdminSettings.php:511
+msgid "Subscriber List"
+msgstr "Listák"
+
+#: app/admin/AdminSettings.php:512
+msgid ""
+"Select the FluentCRM subscriber list where users will be added "
+"automatically. Leave blank if you don’t want to add them."
+msgstr ""
+"Válaszd ki azt a FluentCRM listát, ahová a felhasználók automatikusan "
+"hozzáadásra kerülnek. Hagyd üresen, ha nem szeretnéd őket hozzáadni."
+
+#: app/admin/AdminSettings.php:515
+msgid "None"
+msgstr "Nincs megadva"
+
+#: app/admin/AdminSettings.php:519
+msgid "Select a list..."
+msgstr "Lista kiválasztása..."
+
+#: app/helper/DiscountHandler.php:65
+msgid "Coupons are not allowed when loyalty discounts are applied."
+msgstr ""
+"Kuponok nem használhatók, amikor törzsvásárlói kedvezmény van érvényben."
+
+#: app/helper/SettingsConfig.php:56 app/modules/FreeGift.php:239
+#: app/modules/FreeGift.php:307
+msgid "Free Gift"
+msgstr "Ajándék"
+
+#: app/helper/SettingsConfig.php:59
+msgid "Coupon usage is disabled for loyalty customers."
+msgstr "A kuponhasználat le van tiltva a törzsvásárlók számára."
+
+#: app/helper/SettingsConfig.php:60 app/modules/FreeGift.php:150
+msgid ""
+"A free gift has been removed from your cart as it is no longer available."
+msgstr ""
+"Egy ajándéktermék el lett távolítva a kosaradból, mivel már nem elérhető."
+
+#: app/helper/UserMeta.php:62
+msgid "No activity"
+msgstr "Nincs aktivitás"
+
+#: app/helper/UserMeta.php:65
+msgid "Not set"
+msgstr "Nincs megadva"
+
+#: app/helper/UserMeta.php:68
+msgid "Loyalty Program Information"
+msgstr ""
+
+#: app/helper/UserMeta.php:74
+msgid "No"
+msgstr "Nem"
+
+#: app/helper/UserMeta.php:75
+msgid "Yes"
+msgstr "Igen"
+
+#: app/helper/UserMeta.php:77
+msgid "Is this user a loyalty program member?"
+msgstr "Ez a felhasználó tagja a törzsvásárlói programnak?"
+
+#: app/helper/UserMeta.php:81
+msgid "Total Order Items"
+msgstr "Össz rendelési tétel"
+
+#: app/helper/UserMeta.php:84
+msgid "Total number of items ordered by the user."
+msgstr "A felhasználó által rendelt tételek teljes száma."
+
+#: app/helper/UserMeta.php:88
+msgid "Total Spent Amount"
+msgstr "Össz elköltött összeg"
+
+#: app/helper/UserMeta.php:91
+msgid "Total amount spent by the user."
+msgstr "A felhasználó által elköltött teljes összeg."
+
+#: app/helper/UserMeta.php:95
+msgid "Last Activity Date"
+msgstr "Utolsó aktivitási dátum"
+
+#: app/helper/UserMeta.php:98
+msgid "Date of the user's last order or activity."
+msgstr "A felhasználó utolsó rendelésének vagy tevékenységének dátuma."
+
+#: app/helper/UserMeta.php:102
+msgid "Loyalty Program Joined Date"
+msgstr "A törzsvásárlói programhoz való csatlakozás dátuma."
+
+#: app/helper/UserMeta.php:105
+msgid "The date the user joined the loyalty program."
+msgstr "A dátum, amikor a felhasználó csatlakozott a törzsvásárlói programhoz."
+
+#: plugin.php:67
+msgid "Settings"
+msgstr "Beállítások"
+
+#: plugin.php:137
+msgid ""
+"This plugin requires WooCommerce %s or later. Please update WooCommerce."
+msgstr ""
+"A bővítményhez WooCommerce %s vagy újabb verzió szükséges. Kérlek, frissítsd "
+"a WooCommerce-t."
+
+#: plugin.php:146
+msgid "This plugin requires WordPress %s or later. Please update WordPress."
+msgstr ""
+"A bővítményhez WordPress %s vagy újabb verzió szükséges. Kérlek, frissítsd a "
+"WordPress-t."
+
+#: plugin.php:155
+msgid "This plugin requires PHP %s or later. Please update your PHP version."
+msgstr ""
+"A bővítményhez PHP %s vagy újabb verzió szükséges. Kérlek, frissítsd a PHP "
+"verziódat."
