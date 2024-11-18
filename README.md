@@ -106,3 +106,8 @@ Filters and actions are available for advanced customizations. Detailed document
 - [ ] **Email Notifications**: Notify users about loyalty status or discounts.
 - [ ] **Dynamic Shortcodes**: Display live data for advanced customization.
 
+## CHANGELOG
+
+### V 1.0 *2024.11.18.*
+
+* Initial release
