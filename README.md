@@ -1,4 +1,4 @@
-# Simple-Loyalty-Program
+# Simple Loyalty Program for WooCommerce
 This plugin adds customizable loyalty features to WooCommerce, offering various settings for a tailored experience.
 
 
