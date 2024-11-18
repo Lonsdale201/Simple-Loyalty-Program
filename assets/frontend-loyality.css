@@ -1,4 +1,4 @@
-.hw-pilla-notification {
+.hw-loyalty-notification {
     background-color: #76c38f;
     padding: 10px 20px;
     border-radius: 4px;
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.hw-pilla-notification-text {
+.hw-loyalty-notification-text {
     font-family: inherit;
     font-size: 1rem;
     color: #ffffff;
