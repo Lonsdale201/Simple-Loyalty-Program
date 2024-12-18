@@ -34,6 +34,7 @@ In the right section the green button: **<>Code** click, and in the dropdown men
 - **FluentCRM Integration**
 - **Notification Options**
 - **Inactivity Rules**
+- **Free Shipping**
 
 ---
 
@@ -107,6 +108,16 @@ Filters and actions are available for advanced customizations. Detailed document
 - [ ] **Dynamic Shortcodes**: Display live data for advanced customization.
 
 ## CHANGELOG
+
+### V 1.1 *2024.12.18*
+
+* The inactivity system did not respect the unique purchase amount and item values (provided by the plugin), and deleted them even if they were not enabled. Fixed
+* **New** feature for loyal customers! 
+
+**Free Shipping option**
+You can now make **free shipping** to loyal customers. 
+Create a free shipping method and select the Loyalty program member option in the requirements field.
+You can also combine it with woocommerce's *minimum order amount* setting, because it takes into account.
 
 ### V 1.0 *2024.11.18.*
 

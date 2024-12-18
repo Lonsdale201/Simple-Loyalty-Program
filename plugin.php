@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Simple Loyalty Program
  * Description: Loyalty settings for WooCommerce
- * Version: 1.0
+ * Version: 1.1
  * Author: Soczó Kristóf
  * Author URI: https://hellowp.io/en/
  * Plugin URI: https://github.com/Lonsdale201/Simple-Loyalty-Program
@@ -10,7 +10,7 @@
  * Domain Path: /languages
  * Requires Plugins: woocommerce
  * Requires at least: 6.0
- * Tested up to: 6.7s
+ * Tested up to: 6.7.1
  * Requires PHP: 8.0
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -30,6 +30,8 @@ require dirname(__FILE__) . '/plugin-update-checker/plugin-update-checker.php';
 
 use YahnisElsts\PluginUpdateChecker\v5p0\PucFactory;
 use HelloWP\HWLoyalty\App\Helper\SettingsConfig;
+use HelloWP\HWLoyalty\App\Helper\FreeShippingManager;
+use HelloWP\HWLoyalty\App\Modules\FreeShipping;
 
 /**
  * The main class for the Loyalty Program settings plugin
@@ -79,16 +81,23 @@ final class HWLoyalty {
         if ( ! $this->is_compatible() ) {
             return;
         }
-        
+
         \HelloWP\HWLoyalty\App\Admin\AdminSettings::get_instance();
         \HelloWP\HWLoyalty\App\Modules\Manager::init();
         \HelloWP\HWLoyalty\App\Helper\Hooks::init();
+   
+        add_action('woocommerce_shipping_init', [$this, 'init_free_shipping_classes']);
 
         $myUpdateChecker = PucFactory::buildUpdateChecker(
             'https://plugin-uodater.alex.hellodevs.dev/plugins/hw-woo-loyalty.json',
             __FILE__,
             'hw-woo-loyalty'
         );
+    }
+
+    public function init_free_shipping_classes() {
+        new FreeShippingManager(); 
+        new FreeShipping();
     }
 
     public function handle_inactivity_option_update($old_value, $value) {
@@ -166,3 +175,8 @@ final class HWLoyalty {
 HWLoyalty::instance();
 
 
+// add_action('woocommerce_shipping_init', function() {
+//     // Itt már biztonságosan példányosíthatod a szállítási osztályokat
+//     new \HelloWP\HWLoyalty\App\Helper\FreeShippingManager();
+//     new \HelloWP\HWLoyalty\App\Modules\FreeShipping();
+// });

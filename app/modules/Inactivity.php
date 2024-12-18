@@ -2,6 +2,7 @@
 namespace HelloWP\HWLoyalty\App\Modules;
 
 use HelloWP\HWLoyalty\App\Helper\Utility;
+use HelloWP\HWLoyalty\App\Helper\SettingsConfig;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
@@ -79,9 +80,19 @@ class Inactivity {
      * @param int $user_id The user ID.
      */
     private static function remove_user_from_loyalty($user_id) {
+        // Set loyalty status to false
         update_user_meta($user_id, 'hw_loyalty_status', 'false');
-        delete_user_meta($user_id, 'hw_total_spent_amount');
-        delete_user_meta($user_id, 'hw_total_order_items');
+    
+        // Check reset_user_data setting
+        $reset_user_data = SettingsConfig::get('hw_loyalty_reset_user_data', 'no');
+    
+        // Only delete data if reset_user_data is enabled
+        if ($reset_user_data === 'yes') {
+            delete_user_meta($user_id, 'hw_total_spent_amount');
+            delete_user_meta($user_id, 'hw_total_order_items');
+        }
+    
+        // Trigger action for further integrations
         do_action('hw_loyalty_user_removed', $user_id);
     }
 }
