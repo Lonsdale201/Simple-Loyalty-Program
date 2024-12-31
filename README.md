@@ -1,4 +1,5 @@
 # Simple Loyalty Program for WooCommerce
+Stable tag: 1.1.0
 This plugin adds customizable loyalty features to WooCommerce, offering various settings for a tailored experience.
 
 
