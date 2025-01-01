@@ -173,10 +173,3 @@ final class HWLoyalty {
 }
 
 HWLoyalty::instance();
-
-
-// add_action('woocommerce_shipping_init', function() {
-//     // Itt már biztonságosan példányosíthatod a szállítási osztályokat
-//     new \HelloWP\HWLoyalty\App\Helper\FreeShippingManager();
-//     new \HelloWP\HWLoyalty\App\Modules\FreeShipping();
-// });
